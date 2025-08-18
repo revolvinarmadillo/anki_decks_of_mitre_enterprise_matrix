@@ -18,8 +18,8 @@ The genanki library can be installed using "pip install genanki"
 
 ## Building decks
 
-To build decks via the python scripts, simply run it in a python3 environment
+To build decks via the python scripts, simply run it in a python3 environment once the genanki library has been installed
 
 E.g., "python3 tactic\_deck\_builder.py" to build the deck covering tactics
 
-The python scripts can be customized to have card types, font, etc. changed; refer to genanki documentation from genanki repo above for more information on note, note models, and deck creation
+The python scripts can be customized to have card types, font, etc. changed; refer to genanki documentation from genanki repo above for more information on notes, note models, and deck creation using the library
