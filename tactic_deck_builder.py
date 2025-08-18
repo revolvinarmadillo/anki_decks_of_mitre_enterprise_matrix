@@ -21,7 +21,7 @@ basic_model = genanki.Model(
         {
             'name': 'Card 1',
             'qfmt': '{{Question}}',
-            'afmt': '{{Answer}}',
+            'afmt': '{{FrontSide}}<hr id="answer">{{Answer}}',
         }
     ],
     css='.card {\n font-family: arial;\n font-size: 20px;\n}\n')
