@@ -1,6 +1,6 @@
 # MITRE ATT&CK® Matrix for Enterprise - Anki Decks (work in progress)
 
-Anki decks for the tactics, techniques, and subtechniques covered in the MITRE ATT&CK® Enterprise Matrix built from components in the MITRE cti github repository [linked here](https://github.com/mitre/cti)
+Anki decks for the tactics, techniques, and subtechniques covered in the MITRE ATT&CK® Enterprise Matrix built using components in the MITRE CTI GitHub repository [linked here](https://github.com/mitre/cti)
 
 Loosely adapted from MITRE ATT&CK® related python code covered in Anthony Isherwood's Detection Engineering focused course 
 * GitHub repo for code covered in their detection engineering course [here](https://github.com/isherwood-sec/detection-engineering)
