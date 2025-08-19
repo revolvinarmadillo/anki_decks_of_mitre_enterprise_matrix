@@ -8,11 +8,11 @@ model_id = random.randrange(1 << 30, 1 << 31)
 deck_id = random.randrange(1 << 30, 1 << 31)
 
 #Making an Anki Note Model based on genanki documentation 
-#(Also, custom css gathered from basic (genanki) model example from builtin_models.py  at https://github.com/kerrickstaley/genanki ; in the genanki directory)
+#(Also, custom css gathered from basic (genanki) model example from builtin_models.py at https://github.com/kerrickstaley/genanki ; in the genanki directory)
 
 basic_model = genanki.Model(
     model_id,
-    'Basic - Front and Bank',
+    'Basic - Front and Back',
     fields=[
         {'name': 'Question'},
         {'name': 'Answer'},
@@ -24,19 +24,17 @@ basic_model = genanki.Model(
             'afmt': '{{FrontSide}}<hr id="answer">{{Answer}}',
         }
     ],
-    css='.card {\n font-family: arial;\n font-size: 20px;\n}\n')
+    css='.card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n}\n')
 
 #Making the Anki deck
-tactic_deck = genanki.Deck(deck_id, 'MITRE ATT&CK Enterprise - Tactics')
+tactic_deck = genanki.Deck(deck_id, 'MITRE ATT&CK® Matrix for Enterprise - Tactics')
 
-# Place url and headers back here from original mitre.py when ready
 url = "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json"
 
 headers = {
     'accept': 'application/json'
 }
 
-#Place request.get part after = from original mitre.py when ready
 mitre_data = requests.get(url, headers=headers).json()
 
 url_list = []
@@ -65,7 +63,7 @@ for tactic in tactic_names:
 
 #Making first Anki note be all tactics listed in bullet point order
 combined_ans = "<ul>" + "".join(tactic_names_bp) + "</ul>"
-first_note = genanki.Note(model=basic_model, fields=['List out the current ATT&CK enterprise tactics in sequential order:',combined_ans])
+first_note = genanki.Note(model=basic_model, fields=['List out the current ATT&CK® enterprise tactics in sequential order:',combined_ans])
 tactic_deck.add_note(first_note)
 
 #Making remaining Anki notes be the individual TA numbers in order; requires user to answer with tactic name

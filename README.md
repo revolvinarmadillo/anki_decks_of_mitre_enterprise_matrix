@@ -9,17 +9,20 @@ Loosely adapted from MITRE ATT&CK® related python code covered in Anthony Isher
 
 ## Requirements
 
-Building the decks from the python scripts requires the genanki library and Python 3+
+Building the decks from the python scripts requires the genanki library, requests library and Python 3+
 
-The genanki library can be installed using "pip install genanki"
+The genanki library can be installed using "pip install genanki" and requests can be installed using "pip install requests"
 
 * Genanki PyPI listing - <https://pypi.org/project/genanki/>
 * Genanki repo - <https://github.com/kerrickstaley/genanki>
 
+* Requests PyPI listing - <https://pypi.org/project/requests/>
+* Requests repo - <https://github.com/psf/requests>
+
 ## Building decks
 
-To build decks via the python scripts, simply run it in a python3 environment once the genanki library has been installed
+To build decks via the python scripts, simply run it in a python3 environment once the genanki and requests libraries have been installed
 
 E.g., "python3 tactic\_deck\_builder.py" to build the deck covering tactics
 
-The python scripts can be customized to have card types, font, etc. changed; refer to genanki documentation from genanki repo above for more information on notes, note models, and deck creation using the library
+The python scripts can be customized to have card types, font, etc. changed; refer to the documentation from the genanki repo above for more information on notes, note models, and deck creation using the library
