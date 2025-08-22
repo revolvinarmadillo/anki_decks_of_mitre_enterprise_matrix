@@ -1,5 +1,4 @@
 import genanki
-import json
 import random
 import requests
 
