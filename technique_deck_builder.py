@@ -43,7 +43,7 @@ basic_model = genanki.Model(
 
 
 #Making the Anki deck
-technique_deck = genanki.Deck(deck_id, 'MITRE ATT&CK Enterprise - Techniques')
+technique_deck = genanki.Deck(deck_id, 'MITRE ATT&CK® Matrix for Enterprise - Techniques')
 
 url = "https://raw.githubusercontent.com/mitre/cti/master/enterprise-attack/enterprise-attack.json"
 
@@ -69,7 +69,7 @@ for object in mitre_data['objects']:
 
 for x in range(0,len(techniques)):
     frontstr = techniques[x]['technique'] + " - technique name? (Optional: Tactic(s) it is mapped to?)"
-    backstr = techniques[x]['name'] + "<br>Tactics - " + techniques[x]['tactics'] + "<br>Link: " + techniques[x]['url']
+    backstr = techniques[x]['name'] + "<br><br>Tactics - " + techniques[x]['tactics'] + "<br>Link: " + techniques[x]['url']
     curr_note = genanki.Note(model=basic_model, fields=[frontstr,backstr])
     technique_deck.add_note(curr_note)
 
