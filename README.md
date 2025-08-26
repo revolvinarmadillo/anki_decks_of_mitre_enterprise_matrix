@@ -1,4 +1,4 @@
-# MITRE ATT&CK® Matrix for Enterprise - Anki Decks (work in progress)
+# MITRE ATT&CK® Matrix for Enterprise - Anki Decks
 
 Anki decks for the tactics, techniques, and subtechniques covered in the MITRE ATT&CK® Enterprise Matrix built using components in the MITRE CTI GitHub repository [linked here](https://github.com/mitre/cti)
 
