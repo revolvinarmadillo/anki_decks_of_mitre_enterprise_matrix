@@ -5,7 +5,9 @@ Anki decks for the tactics, techniques, and subtechniques covered in the MITRE A
 Loosely adapted from MITRE ATT&CK® related python code covered in Anthony Isherwood's Detection Engineering focused course 
 * GitHub repo for code covered in their detection engineering course [here](https://github.com/isherwood-sec/detection-engineering)
 * TCM Academy "Detection Engineering for Beginners" version listed on their site [here](https://aisherwood.me/courses/)
-* Newer course site for "Detection Engineering 101: Start Your Journey" [here](https://www.isherwoodsec.com/)
+* Udemy versions of "Detection Engineering Masterclass":
+  * [Part 1](https://www.udemy.com/course/detection-engineering-masterclass-part-1/)
+  * [Part 2](https://www.udemy.com/course/detection-engineering-masterclass-part-2/)
 
 ## Requirements
 
