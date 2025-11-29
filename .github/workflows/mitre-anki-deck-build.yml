@@ -1,0 +1,15 @@
+name: mitre-anki-deck-build
+on:
+    # This will be a manually activated workflow via the Actions tab
+    # (future plans will involve workflow running when MITRE CTI repo has new "enterprise-attack.json" version pushed)
+    workflow_dispatch:
+jobs:
+  deck-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: pip install genanki
+      - run: pip install requests
+      - run: python tactic_deck_builder.py
+      - run: python technique_deck_builder.py
+      - run: python subtechnique_deck_builder.py
