@@ -8,8 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - run: pip install genanki
-      - run: pip install requests
+      - uses: actions/setup-python@v5
+        with:
+            cache: 'pip'
+      - run: pip install -r requirements.txt
       - run: python tactic_deck_builder.py
       - run: python technique_deck_builder.py
       - run: python subtechnique_deck_builder.py
