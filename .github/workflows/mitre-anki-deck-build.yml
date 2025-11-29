@@ -15,3 +15,7 @@ jobs:
       - run: python tactic_deck_builder.py
       - run: python technique_deck_builder.py
       - run: python subtechnique_deck_builder.py
+      - run: |
+          git add .
+          git commit -m "Adding updated apkg files to repository"
+          git push
